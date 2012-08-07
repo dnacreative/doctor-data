@@ -1,427 +1,453 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Doctor Data</title>
-</head>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Doctor Data</title>
+    </head>
 
-<body>
+    <body>
 
-<form id="form1" name="form1" method="post" action="">
-<h1><u>Patients Database</u>
-</h1>
-<h2><strong>Particulars of Patient</u></strong>:</h2>
-<p><img alt="Patient Image" name="pt_img" width="180" height="180" align="right" id="pt_img" /></p>
-  <label for="pt_name"><strong>Name</strong></label>
-  <strong>  :</strong>
-  <input type="text" name="pt_name" id="pt_name" />
-  <p>
-    <label for="pt_age"><strong>Age :</strong></label>
-    <input type="text" name="pt_age" id="pt_age" />
-     </p>
-  <p>
-    <strong>Sex : </strong>
-    <label>
-      <input type="radio" name="Sex" value="male" id="gen_male" />
-      Male</label>
-    <label>
-      <input type="radio" name="Sex" value="female" id="gen_female" />
-      Female</label>
-    <label>
-      <input type="radio" name="Sex" value="other" id="gen_other" />
-      Other</label>
-  </p>
-  <p>
-    <strong>Marital Status : </strong>
-    <label>
-      <input type="radio" name="Marital Status" value="Married" id="Marital_married" />
-      Married</label>
-    <label>
-      <input type="radio" name="Marital Status" value="Unmarried" id="Marital_unmarried" />
-      Unmarried</label>
-    <br />
-  </p>
-  <p>
-    <label for="Economy_satus"><strong>Economic Stauts (Family Income per month):</strong></label>
-    <input type="text" name="Economy_satus" id="Economy_satus" />
-    <br />
-    
-  </p>
-  <p>
-  <label for="relg"> <strong>Religion:</strong></label>
-  <input type="text" name="relg" id="relg" />
-  <strong>Occupation:</strong>
-    <input type="text" name="pt_occup" id="pt_occup" />
-  </p>
+        <form id="form1" name="form1" method="post" action="">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th><h2><strong>Particulars of Patient</u></strong>:</h2></th>
+                        <th><h1><u>Patients Database</u></h1></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="pt_name"><strong>Name</strong></label>
+                            <strong>  :</strong>
+                            <input type="text" name="pt_name" id="pt_name" />
+                        </td>
+                        <td>
+                            <label for="pt_age"><strong>Age :</strong></label>
+                            <input type="text" name="pt_age" id="pt_age" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Sex : </strong>
+                            <label>
+                                <input type="radio" name="Sex" value="male" id="gen_male" />
+                                Male</label>
+                            <label>
+                                <input type="radio" name="Sex" value="female" id="gen_female" />
+                                Female</label>
+                            <label>
+                                <input type="radio" name="Sex" value="other" id="gen_other" />
+                                Other
+                            </label>
+                        </td>
+                        <td>
+                            <strong>Marital Status : </strong>
+                            <label>
+                                <input type="radio" name="Marital Status" value="Married" id="Marital_married" />
+                                Married</label>
+                            <label>
+                                <input type="radio" name="Marital Status" value="Unmarried" id="Marital_unmarried" />
+                                Unmarried</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Economy_satus"><strong>Economic Stauts (Family Income per month):</strong></label>
+                            <input type="text" name="Economy_satus" id="Economy_satus" />
+                        </td>
+                        <td>
+                            <label for="relg"> <strong>Religion:</strong></label>
+                            <input type="text" name="relg" id="relg" />
+                            <strong>Occupation:</strong>
+                            <input type="text" name="pt_occup" id="pt_occup" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="prea_hs"><strong>Present Address:</strong></label>
+                        </td>
+                        <td>
+                            House no/Road no:
+                            <input name="prea_hs" type="text" id="prea_hs" />
+                            Area/Village:
+                            <input type="text" name="prea_area" id="prea_area" />
+                            Police Station:
+                            <input type="text" name="prea_ps" id="prea_ps" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            District:
+                            <input type="text" name="prea_district" id="prea_district" />
+                            State/Division:
+                            <input type="text" name="prea_div" id="prea_div" />
+                            Country:
+                            <input type="text" name="prea_con" id="prea_con" />
+                        </td>
+                        <td>
+                            House no/Road no:
+                            <input name="pera_hs" type="text" id="pera_hs" />
+                            Area/Village:
+                            <input type="text" name="pera_area" id="pera_area" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="per_add"><strong>Permanent Address:</strong></label>
+                        </td>
+                        <td>
+                            Police Station:
+                            <input type="text" name="pera_ps" id="pera_ps" />
 
-  <p>
-    <label for="prea_hs"><strong>Present Address:</strong></label>
-  </p>
-  <p>House no/Road no:
-    <input name="prea_hs" type="text" id="prea_hs" />
-  Area/Village:
-    <input type="text" name="prea_area" id="prea_area" />
-  Police Station:
-    <input type="text" name="prea_ps" id="prea_ps" />
-  </p>
-  <p>District:
-    <input type="text" name="prea_district" id="prea_district" />
-  State/Division:
-    <input type="text" name="prea_div" id="prea_div" />
-  Country:
-    <input type="text" name="prea_con" id="prea_con" />
-  </p>
-  <p>
-    <label for="per_add"><strong>Permanent Address:</strong></label>
-  </p>
-  <p>House no/Road no:
-    <input name="pera_hs" type="text" id="pera_hs" />
-  Area/Village:
-    <input type="text" name="pera_area" id="pera_area" />
-  </p>
-  <p>Police Station:
-    <input type="text" name="pera_ps" id="pera_ps" />
-  </p>
-  <p>District:
-    <input type="text" name="pera_district" id="pera_district" />
-  </p>
-  <p>State/Division:
-    <input type="text" name="pera_div" id="pera_div" />
-  </p>
-  <p>Country:
-    <input type="text" name="pera_con" id="pera_con" />
-  </p>
+                            District:
+                            <input type="text" name="pera_district" id="pera_district" />
 
-<p>Date: Day
-  <select name="pt_dateD" id="pt_dateD">
-  <option selected="selected">01</option>
-  <option>02</option>
-  <option>03</option>
-  <option>04</option>
-  <option>05</option>
-  <option>06</option>
-  <option>07</option>
-  <option>08</option>
-  <option>09</option>
-  <option>10</option>
-  <option>11</option>
-  <option>12</option>
-  <option>13</option>
-  <option>14</option>
-  <option>15</option>
-  <option>16</option>
-  <option>17</option>
-  <option>18</option>
-  <option>19</option>
-  <option>20</option>
-  <option>21</option>
-  <option>22</option>
-  <option>23</option>
-  <option>24</option>
-  <option>25</option>
-  <option>26</option>
-  <option>27</option>
-  <option>28</option>
-  <option>29</option>
-  <option>30</option>
-  <option>31</option>
-</select>
-Month
-<select name="pt_dateM" id="pt_dateM">
-  <option>January</option>
-  <option>February</option>
-  <option>March</option>
-  <option>April</option>
-  <option>May</option>
-  <option>June</option>
-  <option>July</option>
-  <option>August</option>
-  <option>September</option>
-  <option>October</option>
-  <option>November</option>
-  <option>December</option>
-</select>
-Year
-<input type="text" name="pt_dateY" id="pt_dateY" />
-</p>
-<p> Contact Number: 
-  <input type="text" name="pt_contct" id="pt_contct" />
-</p>
-<p>&nbsp;</p>
-<h2><strong>Cheif Complaints:</strong>
-</h2>
-<p>1.
-  <input type="text" name="cc_1" id="cc_1" />
-</p>
-<p>2.
-  <input type="text" name="cc_2" id="cc_2" />
-</p>
-<p>3.
-  <input type="text" name="cc_3" id="cc_3" />
-</p>
-<p>4.
-  <input type="text" name="cc_4" id="cc_4" />
-</p>
-<p>5.
-  <input type="text" name="cc_5" id="cc_5" />
-</p>
-<p>6.
-  <input type="text" name="cc_6" id="cc_6" />
-</p>
-<p>7.
-  <input type="text" name="cc_7" id="cc_7" />
-</p>
-<p>8.
-  <input type="text" name="cc_8" id="cc_8" />
-</p>
-<p>9.
-  <input type="text" name="cc_9" id="cc_9" />
-</p>
-<p>10.
-  <input type="text" name="cc_10" id="cc_10" />
-</p>
-<p>&nbsp;</p>
-<h2><strong>History of Present Illness:</strong></h2>
-<p><strong>Positive Points:
-  </strong>
-  <textarea name="hpre_pos" id="hpre_pos" cols="45" rows="5"></textarea> 
-  </p>
-<p><em>(Example: Fever- intermittent, low grade, comes at night, for 15 days, associated with sweating, not associated with chills and rigor etc)</em>
-</p>
-<p><strong>Negative Points:</strong>
-    <textarea name="hpre_neg" id="hpre_neg" cols="45" rows="5"></textarea>
-</p>
-<p>(<em>Example: Constipation-absent, diarrhoea- absent, anuria/oligouria- absent, polyuria-absent.....or in short Bladder habit: normal, Bowel habit: normal etc)</em></p>
-<p>&nbsp;</p>
-<h2>History of Past Illness:</h2>
-<p><strong>Relevant:</strong>
-  <textarea name="hpas_rel" id="hpas_rel" cols="45" rows="5"></textarea>
-</p>
-<p><em>(Example: Diseases related to current symptomps, if any)</em></p>
-<p><strong>Non Relevant:
-  </strong>
-  <textarea name="hpas_nonrel" id="hpas_nonrel" cols="45" rows="5"></textarea>
-</p>
-<p><em>(Example: Diseases related to current symptomps, if any)</em></p>
-<p><strong>Other:</strong>
-<textarea name="hpas_other" id="hpas_other" cols="45" rows="5"></textarea>
-</p>
-<p><em>(Example: Dont miss Diabetes Mellitus, Hypertension, Asthma, TB, Malignancy, Stroke, Epilepsy, Rheumatic Fever and other chronic,autoimmune and congenital diseases)</em></p>
-<h2>Birth History:</h2>
-<h2>
-  <textarea name="hbirth" id="hbirth" cols="45" rows="5"></textarea>
-</h2>
-<p><em>(Mode of birth, birth trauma, asphyxia, maturity, maternal age, birth wight, congenital anomaly etc)</em></p>
-<h2>Family History:  </h2>
-<h2>
-  <textarea name="hfamily" id="hfamily" cols="45" rows="5"></textarea>
-</h2>
-<p><em>(Any relevent diseases, number of family members, genetic diseases)</em></p>
-<h2>Social History:  </h2>
-<h2>
-  <textarea name="hsocial" id="hsocial" cols="45" rows="5"></textarea>
-</h2>
-<p><em>(Economical, educational, cultural position in society, social relationship, community participation)</em></p>
-<h2>Personal Habits:</h2>
-<h2>
-  <textarea name="hperson" id="hperson" cols="45" rows="5"></textarea>
-</h2>
-<p><em>(Use of drugs, smoking, alcohol, sexual habit, sexual orientation etc)</em></p>
-<h2>Diet History:  </h2>
-<h2>
-  <textarea name="hdiet" id="hdiet" cols="45" rows="5"></textarea>
-</h2>
-<p><em>(Number of Regular Meal, Diet component)</em></p>
-<p>&nbsp;</p>
-<h2>Immunization History:  </h2>
-<h2>
-  <textarea name="himmune" id="himmune" cols="45" rows="5"></textarea>
-</h2>
-<h2>Treatment History:</h2>
-<h2>
-  <textarea name="htreat" id="htreat" cols="45" rows="5"></textarea>
-</h2>
-<p><em>(History of hospital admission, doctor visit, reason, treatment given, response, trauma, injury etc)</em></p>
-<h2>Drug History:  </h2>
-<h2>
-  <textarea name="hdrug" id="hdrug" cols="45" rows="5"></textarea>
-</h2>
-<p><em>(Currently taking drugs, doctor prescribed or not, taking reason)</em></p>
-<h2>Menstrual History:</h2>
-<p>LMP <em>(1st day of last menstrual period)</em>:
-<input name="men_lmp" type="text" id="men_lmp" value="DD/MM/YYYY" />
-</p>
-<p>Regularity:
-  <input type="text" name="men_reg" id="men_reg" />
-</p>
-<p>Menstrual Period <em>(time period of each cycle)</em>:
-<input type="text" name="men_period" id="men_period" />
-</p>
-<p>Duration <em>(duration of each menstruation)</em>:
-  <input type="text" name="men_dur" id="men_dur" />
-</p>
-<p>Age of menarche:
-  <input type="text" name="men_menarche" id="men_menarche" />
-</p>
-<p>Age of menopause <em>(if occured)</em>:
-<input type="text" name="men_pause" id="men_pause" />
-</p>
-<h2>Obstetric History:</h2>
-<h2>General Examination:</h2>
-<p>Apperance:
-  <input type="text" name="ge_app" id="ge_app" />
-Body Built:
-  <input type="text" name="ge_bb" id="ge_bb" />
-Nutrition:
-  <input type="text" name="ge_app3" id="ge_app3" />
-</p>
-<p>Intelligence:
-  <input type="text" name="ge_Intel" id="ge_Intel" />
-Co-operation:
-  <input type="text" name="ge_coop" id="ge_coop" />
-Decubitus:
-  <input type="text" name="ge_decub" id="ge_decub" />
-</p>
-<p>Anaemia:
-  <input type="text" name="ge_anam" id="ge_anam" />
-</p>
-<p>Juandice:
-  <input type="text" name="ge_juan" id="ge_juan" />
-</p>
-<p>Cyanosis:
-  <input type="text" name="ge_cyan" id="ge_cyan" />
-</p>
-<table width="265" border="1" id="ge2">
-  <tr>
-    <th width="94" scope="row">Anaemia</th>
-    <td width="155">&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Juandice</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Cyanosis</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Clubbing</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Koilonychia</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Luconychia</th>
-    <td>&nbsp;</td>
-  </tr>
-</table>
-<table width="265" border="1" id="ge3">
-  <tr>
-    <th width="94" scope="row">Oedema</th>
-    <td width="155">&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Dehydration</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Pulse</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Bp</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Temperature</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Lymp node</th>
-    <td>&nbsp;</td>
-  </tr>
-</table>
-<table width="265" border="1" id="ge4">
-  <tr>
-    <th width="94" scope="row">Thyroid</th>
-    <td width="155">&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Skin condition</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Hair Distribution</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Co-operaion</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Intelligence</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Decubitus</th>
-    <td>&nbsp;</td>
-  </tr>
-</table>
-<h2>Respiratory System Examination:</h2>
-<table width="505" border="1" id="rse">
-  <tr>
-    <th width="183" scope="row">Respiratory rate</th>
-    <td width="306">&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Position of Trachea</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th height="26" scope="row"><p>Chest Movement</p></th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Use of Accessory Muscle</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Shape of Chest</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Chest Deformity</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Chest Expansion</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Purcussion</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">&nbsp;</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">&nbsp;</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">&nbsp;</th>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">&nbsp;</th>
-    <td>&nbsp;</td>
-  </tr>
-</table>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</form>
-</body>
+
+                            <input type="text" name="pera_div" id="pera_div" />
+
+                            Country:
+                            <input type="text" name="pera_con" id="pera_con" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+            <p><img alt="Patient Image" name="pt_img" width="180" height="180" align="right" id="pt_img" /></p>
+
+
+            <p>Date: Day
+                <select name="pt_dateD" id="pt_dateD">
+                    <option selected="selected">01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+                Month
+                <select name="pt_dateM" id="pt_dateM">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+                Year
+                <input type="text" name="pt_dateY" id="pt_dateY" />
+            </p>
+            <p> Contact Number: 
+                <input type="text" name="pt_contct" id="pt_contct" />
+            </p>
+            <p>&nbsp;</p>
+            <h2><strong>Cheif Complaints:</strong>
+            </h2>
+            <p>1.
+                <input type="text" name="cc_1" id="cc_1" />
+            </p>
+            <p>2.
+                <input type="text" name="cc_2" id="cc_2" />
+            </p>
+            <p>3.
+                <input type="text" name="cc_3" id="cc_3" />
+            </p>
+            <p>4.
+                <input type="text" name="cc_4" id="cc_4" />
+            </p>
+            <p>5.
+                <input type="text" name="cc_5" id="cc_5" />
+            </p>
+            <p>6.
+                <input type="text" name="cc_6" id="cc_6" />
+            </p>
+            <p>7.
+                <input type="text" name="cc_7" id="cc_7" />
+            </p>
+            <p>8.
+                <input type="text" name="cc_8" id="cc_8" />
+            </p>
+            <p>9.
+                <input type="text" name="cc_9" id="cc_9" />
+            </p>
+            <p>10.
+                <input type="text" name="cc_10" id="cc_10" />
+            </p>
+            <p>&nbsp;</p>
+            <h2><strong>History of Present Illness:</strong></h2>
+            <p><strong>Positive Points:
+                </strong>
+                <textarea name="hpre_pos" id="hpre_pos" cols="45" rows="5"></textarea> 
+            </p>
+            <p><em>(Example: Fever- intermittent, low grade, comes at night, for 15 days, associated with sweating, not associated with chills and rigor etc)</em>
+            </p>
+            <p><strong>Negative Points:</strong>
+                <textarea name="hpre_neg" id="hpre_neg" cols="45" rows="5"></textarea>
+            </p>
+            <p>(<em>Example: Constipation-absent, diarrhoea- absent, anuria/oligouria- absent, polyuria-absent.....or in short Bladder habit: normal, Bowel habit: normal etc)</em></p>
+            <p>&nbsp;</p>
+            <h2>History of Past Illness:</h2>
+            <p><strong>Relevant:</strong>
+                <textarea name="hpas_rel" id="hpas_rel" cols="45" rows="5"></textarea>
+            </p>
+            <p><em>(Example: Diseases related to current symptomps, if any)</em></p>
+            <p><strong>Non Relevant:
+                </strong>
+                <textarea name="hpas_nonrel" id="hpas_nonrel" cols="45" rows="5"></textarea>
+            </p>
+            <p><em>(Example: Diseases related to current symptomps, if any)</em></p>
+            <p><strong>Other:</strong>
+                <textarea name="hpas_other" id="hpas_other" cols="45" rows="5"></textarea>
+            </p>
+            <p><em>(Example: Dont miss Diabetes Mellitus, Hypertension, Asthma, TB, Malignancy, Stroke, Epilepsy, Rheumatic Fever and other chronic,autoimmune and congenital diseases)</em></p>
+            <h2>Birth History:</h2>
+            <h2>
+                <textarea name="hbirth" id="hbirth" cols="45" rows="5"></textarea>
+            </h2>
+            <p><em>(Mode of birth, birth trauma, asphyxia, maturity, maternal age, birth wight, congenital anomaly etc)</em></p>
+            <h2>Family History:  </h2>
+            <h2>
+                <textarea name="hfamily" id="hfamily" cols="45" rows="5"></textarea>
+            </h2>
+            <p><em>(Any relevent diseases, number of family members, genetic diseases)</em></p>
+            <h2>Social History:  </h2>
+            <h2>
+                <textarea name="hsocial" id="hsocial" cols="45" rows="5"></textarea>
+            </h2>
+            <p><em>(Economical, educational, cultural position in society, social relationship, community participation)</em></p>
+            <h2>Personal Habits:</h2>
+            <h2>
+                <textarea name="hperson" id="hperson" cols="45" rows="5"></textarea>
+            </h2>
+            <p><em>(Use of drugs, smoking, alcohol, sexual habit, sexual orientation etc)</em></p>
+            <h2>Diet History:  </h2>
+            <h2>
+                <textarea name="hdiet" id="hdiet" cols="45" rows="5"></textarea>
+            </h2>
+            <p><em>(Number of Regular Meal, Diet component)</em></p>
+            <p>&nbsp;</p>
+            <h2>Immunization History:  </h2>
+            <h2>
+                <textarea name="himmune" id="himmune" cols="45" rows="5"></textarea>
+            </h2>
+            <h2>Treatment History:</h2>
+            <h2>
+                <textarea name="htreat" id="htreat" cols="45" rows="5"></textarea>
+            </h2>
+            <p><em>(History of hospital admission, doctor visit, reason, treatment given, response, trauma, injury etc)</em></p>
+            <h2>Drug History:  </h2>
+            <h2>
+                <textarea name="hdrug" id="hdrug" cols="45" rows="5"></textarea>
+            </h2>
+            <p><em>(Currently taking drugs, doctor prescribed or not, taking reason)</em></p>
+            <h2>Menstrual History:</h2>
+            <p>LMP <em>(1st day of last menstrual period)</em>:
+                <input name="men_lmp" type="text" id="men_lmp" value="DD/MM/YYYY" />
+            </p>
+            <p>Regularity:
+                <input type="text" name="men_reg" id="men_reg" />
+            </p>
+            <p>Menstrual Period <em>(time period of each cycle)</em>:
+                <input type="text" name="men_period" id="men_period" />
+            </p>
+            <p>Duration <em>(duration of each menstruation)</em>:
+                <input type="text" name="men_dur" id="men_dur" />
+            </p>
+            <p>Age of menarche:
+                <input type="text" name="men_menarche" id="men_menarche" />
+            </p>
+            <p>Age of menopause <em>(if occured)</em>:
+                <input type="text" name="men_pause" id="men_pause" />
+            </p>
+            <h2>Obstetric History:</h2>
+            <h2>General Examination:</h2>
+            <p>Apperance:
+                <input type="text" name="ge_app" id="ge_app" />
+                Body Built:
+                <input type="text" name="ge_bb" id="ge_bb" />
+                Nutrition:
+                <input type="text" name="ge_app3" id="ge_app3" />
+            </p>
+            <p>Intelligence:
+                <input type="text" name="ge_Intel" id="ge_Intel" />
+                Co-operation:
+                <input type="text" name="ge_coop" id="ge_coop" />
+                Decubitus:
+                <input type="text" name="ge_decub" id="ge_decub" />
+            </p>
+            <p>Anaemia:
+                <input type="text" name="ge_anam" id="ge_anam" />
+            </p>
+            <p>Juandice:
+                <input type="text" name="ge_juan" id="ge_juan" />
+            </p>
+            <p>Cyanosis:
+                <input type="text" name="ge_cyan" id="ge_cyan" />
+            </p>
+            <table width="265" border="1" id="ge2">
+                <tr>
+                    <th width="94" scope="row">Anaemia</th>
+                    <td width="155">&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Juandice</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Cyanosis</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Clubbing</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Koilonychia</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Luconychia</th>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+            <table width="265" border="1" id="ge3">
+                <tr>
+                    <th width="94" scope="row">Oedema</th>
+                    <td width="155">&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Dehydration</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Pulse</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Bp</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Temperature</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Lymp node</th>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+            <table width="265" border="1" id="ge4">
+                <tr>
+                    <th width="94" scope="row">Thyroid</th>
+                    <td width="155">&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Skin condition</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Hair Distribution</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Co-operaion</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Intelligence</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Decubitus</th>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+            <h2>Respiratory System Examination:</h2>
+            <table width="505" border="1" id="rse">
+                <tr>
+                    <th width="183" scope="row">Respiratory rate</th>
+                    <td width="306">&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Position of Trachea</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th height="26" scope="row"><p>Chest Movement</p></th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Use of Accessory Muscle</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Shape of Chest</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Chest Deformity</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Chest Expansion</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Purcussion</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">&nbsp;</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">&nbsp;</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">&nbsp;</th>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">&nbsp;</th>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </form>
+    </body>
 </html>
